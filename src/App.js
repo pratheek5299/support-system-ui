@@ -1,10 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
+import Body from './components/body/Body';
+import Footer from './components/footer/Footer';
 
 function App() {
   return (
-    <div className="App">
-      Support System UI
+    <div className="app-wrapper-container">
+      <div className='app-container'>
+        <Body/>
+        <Footer/>
+      </div>
     </div>
   );
 }
