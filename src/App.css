@@ -1,12 +1,37 @@
+body{
+  overflow: scroll;
+}
+body::-webkit-scrollbar{
+  display: none;
+}
 .app-wrapper-container {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
 }
+
 .app-container{
-  width: 30vw;
-  background-color: lightblue;
+  /* background-color: lightblue; */
   height: 85vh;
   position: relative;
+}
+@media screen and (max-width: 600px){
+  .app-container{
+    width: 100%;
+    height: 100%;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+  .app-container{
+    width: 80%;
+    height: 90%;
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 1001px){
+  .app-container{
+    width: 40%;
+    height: 95%;
+  }
 }
